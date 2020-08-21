@@ -9,7 +9,6 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-
 sudo chmod +x /usr/local/bin/docker-compose && sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 sudo docker-compose --version
 
-sudo curl -o /tmp/authorized_keys https://raw.githubusercontent.com/vvorld/node-prep/master/authorized_keys
+sudo curl -O https://raw.githubusercontent.com/vvorld/node-prep/master/authorized_keys
 sudo chmod 0600 /tmp/authorized_keys
 sudo mv /tmp/authorized_keys /root/.ssh/authorized_keys
-sudo chmod 0600 /root/.ssh/authorized_keys
